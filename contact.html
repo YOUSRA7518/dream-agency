@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./contact.css" />
+  </head>
+  <body>
+    <main id="togglebutton">
+      <div id="change-theme-btn">
+        <input type="checkbox" class="toggle__switch" />
+      </div>
+      <header>
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./gallery.html">GALLERY</a></li>
+          <li><a href="./team.html">TEAM'S</a></li>
+          <li class="active"><a href="#">CONTACT</a></li>
+        </ul>
+      </header>
+      <h1>CONTACTEZ NOUS !</h1>
+      <div class="contact-section">
+        <div class="border"></div>
+        <form class="contact-form" action="index.html" method="POST">
+          <input
+            type="text"
+            class="contact-form-text"
+            placeholder="YOUR NAME"
+          />
+          <input
+            type="email"
+            class="contact-form-text"
+            placeholder="YOUR EMAIL"
+          />
+          <input
+            type="text"
+            class="contact-form-text"
+            placeholder="Your name"
+          />
+          <textarea
+            class="contact-from-text"
+            placeholder="YOUR MESSAGE "
+          ></textarea>
+          <input type="submit" class="contact-form-btn" value="Send" />
+        </form>
+        <script src="contact.js"></script>
+      </div>
+    </main>
+  </body>
+</html>

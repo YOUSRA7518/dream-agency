@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Century "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  background-image: url(./images/paradis.jpg);
+}
+header {
+  background-size: cover;
+  background-position: center;
+}
+ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+ul li {
+  display: inline-block;
+}
+ul li.active a {
+  background-color: white;
+}
+ul li a {
+  text-decoration: none;
+  color: lightblue;
+  padding: 6px 20px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+}
+ul li.active a {
+  background-color: white;
+}
+.container {
+  width: 1280px;
+  top: 8em;
+  position: relative;
+  margin: 70px auto 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container .box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+
+  margin: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.container .box .imgBox {
+  position: relative;
+  overflow: hidden;
+}
+.container .box .imgBox img {
+  max-width: 100%;
+  transition: transform 2s;
+  width: 30em;
+  height: 18em;
+}
+.container .box .details {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  transform: scaleY(0);
+  transition: transform 0.5s;
+}
+.container .box .details .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+}
+.container .box .details .content h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: white;
+}
+.container .box .details .content p {
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 20px;
+  color: white;
+}
+// HOVER
+.container .box:hover .imgBox img {
+  transform: scale(1.2);
+}
+.container .box:hover .details {
+  transform: scaleY(1);
+}
+ul li a:hover {
+  background-color: white;
+  color: #000;
+}

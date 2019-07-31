@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Century "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(./images/paradis.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/paradis.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li.active a {
+  background-color: white;
+}
+
+ul li a {
+  text-decoration: none;
+  color: lightblue;
+  padding: 6px 20px;
+  border: 1px solid transparent;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
+ul li.active a {
+  background-color: white;
+}
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.title h1 {
+  font-size: 70px;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, right top, from(#8cfdff), color-stop(#fff), to(#7bdddf));
+  background: linear-gradient(90deg, #8cfdff, #fff, #7bdddf);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  -webkit-animation: animate 7s linear infinite;
+          animation: animate 7s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+.button {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.btn {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
+ul li a:hover {
+  background-color: white;
+  color: #000;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #000;
+}
+
+.footer #button:hover {
+  width: 35px;
+  height: 35px;
+  border: #3a3a3a 12px solid;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  position: relative;
+}
+
+.footer:hover {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  height: 10em;
+}
+
+.footer #button {
+  width: 35px;
+  height: 35px;
+  border: lightblue 12px solid;
+  border-radius: 35px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 2em;
+  overflow: hidden;
+  margin: 0 auto;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 999;
+}
+
+.footer #container {
+  margin-top: 5px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+.footer #cont {
+  position: relative;
+  top: -45px;
+  right: 190px;
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.footer_center {
+  width: 500px;
+  float: left;
+  text-align: center;
+}
+
+.footer h3 {
+  font-family: "Helvetica";
+  font-size: 30px;
+  font-weight: 100;
+  margin-top: 70px;
+  margin-left: 40px;
+}
+
+#container img {
+  left: 80em;
+  top: 2em;
+  position: relative;
+  padding: 10px;
+  color: white;
+}
+
+.text p {
+  color: lightblue;
+  left: 2em;
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */
